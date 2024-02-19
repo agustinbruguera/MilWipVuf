@@ -1,13 +1,18 @@
+using System.Collections.Generic;
+using System.Linq;
 using UnityEngine;
 using UnityEngine.UI; // Importante para trabajar con UI Image
 using Vuforia;
+
 
 public class SimpleBarcodeScanner : MonoBehaviour
 {
     public TMPro.TextMeshProUGUI barcodeAsText;
     public UnityEngine.UI.Image displayedImage; // Referencia al componente Image en tu Canvas
-    public Sprite defaultImage; // Una imagen predeterminada para mostrar cuando no hay código QR detectado
+    public Sprite defaultImage; // Una imagen predeterminada para mostrar cuando no hay cï¿½digo QR detectado
     BarcodeBehaviour mBarcodeBehaviour;
+    List<Sprite> images = new List<Sprite>();
+
 
     void Start()
     {
@@ -21,17 +26,24 @@ public class SimpleBarcodeScanner : MonoBehaviour
     {
         if (mBarcodeBehaviour != null && mBarcodeBehaviour.InstanceData != null)
         {
-            // Aquí, asumiremos que InstanceData.Text contiene la ruta al archivo de imagen dentro de Resources
-            // o algún identificador que puedas mapear a una imagen.
-            barcodeAsText.text = mBarcodeBehaviour.InstanceData.Text;
+            // Aquï¿½, asumiremos que InstanceData.Text contiene la ruta al archivo de imagen dentro de Resources
+            // o algï¿½n identificador que puedas mapear a una imagen.
             string imageFileName = mBarcodeBehaviour.InstanceData.Text;
-            Sprite newSprite = Resources.Load<Sprite>("Images/" + imageFileName);
+            string[] imageList = imageFileName.Split(",");
 
-            if (newSprite != null)
+            foreach(var item in imageList)
+            {
+                Sprite newSprite = Resources.Load<Sprite>("Images/" + item);
+                images.Add(newSprite);
+            }
+            
+
+            if (images.Count > 0)
             {
                 Debug.Log("newSprite");
-                displayedImage.sprite = newSprite; // Actualizar la imagen mostrada
+                displayedImage.sprite = images[2]; // Actualizar la imagen mostrada
                 displayedImage.enabled = true;
+                barcodeAsText.text = imageList[2];
             }
             else Debug.Log("No newSprite");
         }
