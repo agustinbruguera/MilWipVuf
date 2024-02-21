@@ -9,8 +9,6 @@ using UnityEditor.SearchService;
 public class Manager : MonoBehaviour
 {
     public static Manager Instance;
-
-
     public SimpleBarcodeScanner SimpleBarcodeScanner;
     public List<Sprite> imageList = new List<Sprite>();
     public GameObject manager;
