@@ -153,7 +153,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   SimpleBarcodeScanner: {fileID: 1278781364}
-  imageList: []
+  imageList:
+  - {fileID: 21300000, guid: 36ab59e0579b03f4fb7d015eb4a838a2, type: 3}
+  - {fileID: 21300000, guid: d17990a613e96c842a6d154fa8aaefcb, type: 3}
+  - {fileID: 21300000, guid: 3ee975f38abe2e747bdece9ef4c2c243, type: 3}
   manager: {fileID: 688495998}
 --- !u!4 &688496000
 Transform:

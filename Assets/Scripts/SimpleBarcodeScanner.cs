@@ -39,11 +39,12 @@ public class SimpleBarcodeScanner : MonoBehaviour
             {
                 Sprite newSprite = Resources.Load<Sprite>("Images/" + item);
                 images.Add(newSprite);
+                Manager.Instance.UpdateSpriteList(images);
             }
 
-            if (images.Count != 0)
+            if (images.Count > 0)
             {
-                Manager.Instance.UpdateSpriteList(images);
+                
                 SceneManager.LoadScene("ImageView", LoadSceneMode.Single);
             }
             else Debug.Log("No newSprite");

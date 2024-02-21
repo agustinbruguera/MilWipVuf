@@ -29,10 +29,28 @@ public class ImageView : MonoBehaviour
     
     public void NextImage()
     {
-        item = item + 1;
-        Debug.Log("item =" + item);
-        displayedImage.sprite = imageList[item];
+        List<Sprite> imageList = Manager.Instance.imageList; // Tuve que volver a llamarla sino me saltaba como lista vacia (miss)
 
+    if (imageList != null && imageList.Count > 0) // Comprobamos que la lista sea valida (este dentro de rango)
+    {
+        // Incrementar item (sprites)
+        item = (item + 1) % imageList.Count;
 
+        // Actualizar la imagen mostrada si el numero de items es valido
+        if (item >= 0 && item < imageList.Count)
+        {
+            displayedImage.sprite = imageList[item];
+            displayedImage.enabled = true;
+            Debug.Log("item = " + item);
+        }
+        else
+        {
+            Debug.LogError("Item fuera de rango: " + item);
+        }
+    }
+    else
+    {
+        Debug.LogError("La lista de imágenes está vacía.");
+    }
     }
 }

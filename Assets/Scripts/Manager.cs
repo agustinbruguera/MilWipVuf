@@ -30,7 +30,7 @@ public class Manager : MonoBehaviour
     void Start()
     {
 
-        // SimpleBarcodeScanner = GameObject.FindGameObjectWithTag("Barcode").GetComponent<SimpleBarcodeScanner>();
+    // SimpleBarcodeScanner = GameObject.FindGameObjectWithTag("Barcode").GetComponent<SimpleBarcodeScanner>();
         
         // imageList = SimpleBarcodeScanner.images;
         // Debug.Log("imagelist:"+imageList.Count);
