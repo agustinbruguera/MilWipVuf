@@ -25,14 +25,14 @@ public class Manager : MonoBehaviour
             Destroy(gameObject); // Destruye cualquier duplicado
         }
     }
-    void Start()
-    {
+    // void Start()
+    // {
 
-    // SimpleBarcodeScanner = GameObject.FindGameObjectWithTag("Barcode").GetComponent<SimpleBarcodeScanner>();
+    // // SimpleBarcodeScanner = GameObject.FindGameObjectWithTag("Barcode").GetComponent<SimpleBarcodeScanner>();
         
-        // imageList = SimpleBarcodeScanner.images;
-        // Debug.Log("imagelist:"+imageList.Count);
-    }
+    //     // imageList = SimpleBarcodeScanner.images;
+    //     // Debug.Log("imagelist:"+imageList.Count);
+    // }
     
     public void UpdateSpriteList(List<Sprite> newList)
     {

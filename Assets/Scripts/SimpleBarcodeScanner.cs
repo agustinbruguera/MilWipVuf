@@ -17,10 +17,7 @@ public class SimpleBarcodeScanner : MonoBehaviour
 
     Manager manager; 
 
-    public void Menu()
-    {
-        SceneManager.LoadScene("Menu", LoadSceneMode.Single);
-    }
+    
     void Start()
     {
         mBarcodeBehaviour = GetComponent<BarcodeBehaviour>();
@@ -44,7 +41,7 @@ public class SimpleBarcodeScanner : MonoBehaviour
                 images.Add(newSprite);
             }
 
-            if (images.Count > 0)
+            if (images.Count >= 0)
             {
                 Manager.Instance.UpdateSpriteList(images);
                 SceneManager.LoadScene("ImageView", LoadSceneMode.Single);
@@ -59,5 +56,9 @@ public class SimpleBarcodeScanner : MonoBehaviour
         }
     }
 
+    // public void Menu()
+    // {
+    //     SceneManager.LoadScene("Menu", LoadSceneMode.Single);
+    // }
      
 }

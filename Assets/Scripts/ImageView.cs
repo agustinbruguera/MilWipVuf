@@ -7,6 +7,7 @@ using UnityEngine.SceneManagement;
 using UnityEditor.SearchService;
 using TMPro;
 using Unity.VisualScripting;
+using System;
 
 public class ImageView : MonoBehaviour
 {
@@ -14,23 +15,23 @@ public class ImageView : MonoBehaviour
     public Sprite defaultImage;
     public TMPro.TextMeshProUGUI imageText;
     public List<Sprite> imageList = new List<Sprite>();
-    public int item;
+    public int item = 0;
 
     void Start()
     {
-        item = 0;
-        List<Sprite> imageList = Manager.Instance.imageList;
-        Debug.Log("imagelist:" + imageList.Count);
         
-        displayedImage.sprite = imageList[item];
-        displayedImage.enabled = true;
+        List<Sprite> imageList = Manager.Instance.imageList;
+    
+            displayedImage.sprite = imageList[0];
+            displayedImage.enabled = true;
+        
         
     }
     
     public void NextImage()
     {
         List<Sprite> imageList = Manager.Instance.imageList; // Tuve que volver a llamarla sino me saltaba como lista vacia (miss)
-
+        
     if (imageList != null && imageList.Count > 0) // Comprobamos que la lista sea valida (este dentro de rango)
     {
         // Incrementar item (sprites)

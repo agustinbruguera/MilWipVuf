@@ -154,9 +154,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   SimpleBarcodeScanner: {fileID: 1278781364}
   imageList:
-  - {fileID: 21300000, guid: 36ab59e0579b03f4fb7d015eb4a838a2, type: 3}
-  - {fileID: 21300000, guid: d17990a613e96c842a6d154fa8aaefcb, type: 3}
-  - {fileID: 21300000, guid: 3ee975f38abe2e747bdece9ef4c2c243, type: 3}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
   manager: {fileID: 688495998}
 --- !u!4 &688496000
 Transform:
@@ -715,7 +715,7 @@ Camera:
   m_BackGroundColor: {r: 0, g: 0, b: 0, a: 1}
   m_projectionMatrixMode: 1
   m_GateFitMode: 2
-  m_FOVAxisMode: 0
+  m_FOVAxisMode: 1
   m_SensorSize: {x: 36, y: 24}
   m_LensShift: {x: 0, y: 0}
   m_FocalLength: 50
@@ -779,7 +779,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1386404446
 RectTransform:
   m_ObjectHideFlags: 0
