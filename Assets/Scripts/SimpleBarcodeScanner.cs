@@ -17,7 +17,10 @@ public class SimpleBarcodeScanner : MonoBehaviour
 
     Manager manager; 
 
-
+    public void Menu()
+    {
+        SceneManager.LoadScene("Menu", LoadSceneMode.Single);
+    }
     void Start()
     {
         mBarcodeBehaviour = GetComponent<BarcodeBehaviour>();
@@ -55,4 +58,6 @@ public class SimpleBarcodeScanner : MonoBehaviour
             barcodeAsText.text = "";
         }
     }
+
+     
 }

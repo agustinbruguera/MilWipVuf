@@ -304,10 +304,10 @@ RectTransform:
   m_Father: {fileID: 1966904754}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5968125, y: 0.37146485}
-  m_AnchorMax: {x: 0.5968125, y: 0.37146485}
-  m_AnchoredPosition: {x: -148.7, y: 327.4146}
-  m_SizeDelta: {x: 1536, y: 1687.7957}
+  m_AnchorMin: {x: 0.4891447, y: 0.6631111}
+  m_AnchorMax: {x: 0.4891447, y: 0.6631111}
+  m_AnchoredPosition: {x: 9.1877, y: -229.55856}
+  m_SizeDelta: {x: 1242.8992, y: 1377.5172}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &588322410
 MonoBehaviour:
@@ -462,7 +462,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 10.969788, y: 0}
+  m_AnchoredPosition: {x: 0.000061035156, y: 0}
   m_SizeDelta: {x: -21.9398, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &704508180
@@ -545,8 +545,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -384, y: -912.5}
-  m_SizeDelta: {x: 767.99, y: 223}
+  m_AnchoredPosition: {x: -980, y: 0}
+  m_SizeDelta: {x: 606.5149, y: 148.1702}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1077712231
 MonoBehaviour:
@@ -696,8 +696,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 388.58, y: -912.5}
-  m_SizeDelta: {x: 758.84, y: 223}
+  m_AnchoredPosition: {x: 927, y: -24}
+  m_SizeDelta: {x: 606.51, y: 148.17}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1099404712
 MonoBehaviour:
@@ -915,7 +915,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -0.000015259, y: 971.9574}
+  m_AnchoredPosition: {x: 1312, y: 658}
   m_SizeDelta: {x: 350.66, y: 72.1185}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1524587118
@@ -1076,7 +1076,10 @@ MonoBehaviour:
   displayedImage: {fileID: 588322410}
   defaultImage: {fileID: 0}
   imageText: {fileID: 0}
-  imageList: []
+  imageList:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
   item: 0
 --- !u!1 &1966904750
 GameObject:
