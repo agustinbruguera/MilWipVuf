@@ -53,6 +53,8 @@ public class SimpleBarcodeScanner : MonoBehaviour
                 SceneManager.LoadScene("ImageView", LoadSceneMode.Single);
             }
             else Debug.Log("QR Invalid");
+            barcodeAsText.text = "Code QR Invalid";
+            
         }
         else
         {
