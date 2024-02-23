@@ -62,20 +62,24 @@ public class ImageView : MonoBehaviour
     if (imageList != null && imageList.Count > 0) // Comprobamos que la lista sea valida (este dentro de rango)
     {
         // Incrementar item (sprites)
+        if (item >= 1)
+        {
         item = (item - 1 + imageList.Count) % imageList.Count;
-        
-
         // Actualizar la imagen mostrada si el numero de items es valido
-        if(item >= 0 && item < imageList.Count)
+        if(item >= 0 && item <= imageList.Count)
         {
             displayedImage.sprite = imageList[item];
             displayedImage.enabled = true;
             Debug.Log("item = " + item);
         }
-        else
+        else 
         {
             Debug.LogError("Item fuera de rango: " + item);
         }
+
+        }
+            else Debug.LogError("Item no Existente");
+        
     }
     else
     {
@@ -83,8 +87,5 @@ public class ImageView : MonoBehaviour
     }
     }
 
-    public void BackToScanner()
-    {
-        SceneManager.LoadScene("SampleScene", LoadSceneMode.Single);
-    }
+    
 }
