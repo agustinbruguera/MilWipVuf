@@ -4,6 +4,8 @@ using UnityEngine;
 using UnityEngine.UI; // Importante para trabajar con UI Image
 using Vuforia;
 using UnityEngine.SceneManagement;
+using UnityEditor.SearchService;
+using JetBrains.Annotations;
 
 
 public class SimpleBarcodeScanner : MonoBehaviour
@@ -38,16 +40,19 @@ public class SimpleBarcodeScanner : MonoBehaviour
 
             foreach(var item in imageList)
             {
+            
                 Sprite newSprite = Resources.Load<Sprite>("Images/" + item);
                 images.Add(newSprite);
+            
             }
 
-            if (images.Count > 0)
+            if (images[0] != null)
             {
+               
                 Manager.Instance.UpdateSpriteList(images);
                 SceneManager.LoadScene("ImageView", LoadSceneMode.Single);
             }
-            else Debug.Log("No newSprite");
+            else Debug.Log("QR Invalid");
         }
         else
         {
