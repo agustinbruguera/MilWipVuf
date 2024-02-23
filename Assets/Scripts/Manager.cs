@@ -4,7 +4,6 @@ using UnityEngine;
 using UnityEngine.UI; // Importante para trabajar con UI Image
 using Vuforia;
 using UnityEngine.SceneManagement;
-using UnityEditor.SearchService;
 
 public class Manager : MonoBehaviour
 {

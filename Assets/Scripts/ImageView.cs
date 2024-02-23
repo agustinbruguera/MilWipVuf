@@ -4,7 +4,6 @@ using UnityEngine;
 using UnityEngine.UI; // Importante para trabajar con UI Image
 using Vuforia;
 using UnityEngine.SceneManagement;
-using UnityEditor.SearchService;
 using TMPro;
 using Unity.VisualScripting;
 using System;
@@ -15,73 +14,58 @@ public class ImageView : MonoBehaviour
     public Sprite defaultImage;
     public TMPro.TextMeshProUGUI imageText;
     public List<Sprite> imageList = new List<Sprite>();
-    public int item = 0;
+
+    [SerializeField]
+    private int item;
 
     void Start()
     {
-        
+        item = 0;
+
         List<Sprite> imageList = Manager.Instance.imageList;
     
-            displayedImage.sprite = imageList[0];
-            displayedImage.enabled = true;
-        
+        displayedImage.sprite = imageList[0];
+        displayedImage.enabled = true;
         
     }
  
-
     public void NextImage()
     {
-        List<Sprite> imageList = Manager.Instance.imageList; // Tuve que volver a llamarla sino me saltaba como lista vacia (miss)
-        
-    if (imageList != null && imageList.Count > 0) // Comprobamos que la lista sea valida (este dentro de rango)
-    {
-        // Incrementar item (sprites)
-        item = (item + 1) % imageList.Count; 
-        // Actualizar la imagen mostrada si el numero de items es valido
-        if (item >= 0 && item < imageList.Count)
+        List<Sprite> imageList = Manager.Instance.imageList;
+
+        if (imageList != null && imageList.Count > 0)
         {
+            item = (item + 1) % imageList.Count;
+            Debug.Log("item = " + item);
+
             displayedImage.sprite = imageList[item];
             displayedImage.enabled = true;
-            Debug.Log("item = " + item);
         }
         else
         {
-            Debug.LogError("Item fuera de rango: " + item);
+            Debug.LogError("La lista de im·genes est· vacÌa.");
         }
-    }
-    else
-    {
-        Debug.LogError("La lista de im√°genes est√° vac√≠a.");
-    }
     }
 
     public void PreviousImage()
     {
-        List<Sprite> imageList = Manager.Instance.imageList; // Tuve que volver a llamarla sino me saltaba como lista vacia (miss)
+        List<Sprite> imageList = Manager.Instance.imageList;
 
-    if (imageList != null && imageList.Count > 0) // Comprobamos que la lista sea valida (este dentro de rango)
-    {
-        // Incrementar item (sprites)
-        item = (item - 1 + imageList.Count) % imageList.Count; 
-        // Actualizar la imagen mostrada si el numero de items es valido
-        if(item >= 0 && item < imageList.Count)
+        if (imageList != null && imageList.Count > 0)
         {
+            item = (item - 1 + imageList.Count) % imageList.Count;
+            Debug.Log("item = " + item);
+
             displayedImage.sprite = imageList[item];
             displayedImage.enabled = true;
-            Debug.Log("item = " + item) ;
         }
-        else 
+        else
         {
-            Debug.LogError("Item fuera de rango: " + item);
+            Debug.LogError("La lista de im·genes est· vacÌa.");
         }
+        
+    }
 
-    }
-    
-    else
-    {
-        Debug.LogError("La lista de im√°genes est√° vac√≠a.");
-    }
-    }
 
     
 }
