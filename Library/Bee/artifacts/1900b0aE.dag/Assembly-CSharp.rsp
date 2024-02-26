@@ -373,13 +373,11 @@
 -r:"Library/Bee/artifacts/1900b0aE.dag/UnityEngine.XR.LegacyInputHelpers.ref.dll"
 -r:"Library/Bee/artifacts/1900b0aE.dag/VuforiaEditorScripts.ref.dll"
 -r:"Library/Bee/artifacts/1900b0aE.dag/VuforiaScripts.ref.dll"
-"Assets/Scripts/BarcodeToGif.cs"
 "Assets/Scripts/ButtonBack.cs"
 "Assets/Scripts/ButtonThrottle.cs"
 "Assets/Scripts/GifView.cs"
 "Assets/Scripts/ImageView.cs"
 "Assets/Scripts/Manager.cs"
-"Assets/Scripts/ManagerGif.cs"
 "Assets/Scripts/SimpleBarcodeScanner.cs"
 "Assets/Scripts/Start.cs"
 -langversion:9.0

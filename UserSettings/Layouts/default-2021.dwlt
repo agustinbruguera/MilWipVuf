@@ -19,7 +19,7 @@ MonoBehaviour:
     width: 1265.3334
     height: 622.6667
   m_ShowMode: 4
-  m_Title: Scene
+  m_Title: Project
   m_RootView: {fileID: 2}
   m_MinSize: {x: 875, y: 300}
   m_MaxSize: {x: 10000, y: 10000}
@@ -119,7 +119,7 @@ MonoBehaviour:
   m_MinSize: {x: 300, y: 200}
   m_MaxSize: {x: 24288, y: 16192}
   vertical: 0
-  controlID: 25727
+  controlID: 513
 --- !u!114 &6
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -144,7 +144,7 @@ MonoBehaviour:
   m_MinSize: {x: 200, y: 200}
   m_MaxSize: {x: 16192, y: 16192}
   vertical: 1
-  controlID: 25728
+  controlID: 514
 --- !u!114 &7
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -169,7 +169,7 @@ MonoBehaviour:
   m_MinSize: {x: 200, y: 100}
   m_MaxSize: {x: 16192, y: 8096}
   vertical: 0
-  controlID: 25729
+  controlID: 515
 --- !u!114 &8
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -368,9 +368,9 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: 
+      m_SelectedIDs: 08640000
       m_LastClickedID: 0
-      m_ExpandedIDs: b64affff9051ffffca52ffffa254ffff3656ffff9a58ffffbe58ffff865dffff725effff245fffff7a5fffff4479ffffb279ffffcc79ffff1e81ffff84a2ffffdea9ffff16aaffff5eaaffff6cb9ffff9ab9ffff7adbffffb6e0ffff36edffffb6edffffdcf0ffff46f1ffffc8f3ffff26f4ffffa8f7ffffaef7ffffb0f7ffffccf7fffff4faffffc8730000128000006e8c00001e8f000006c7000054c7000018d900007ad9000066da000096da000024de0000aede0000a2df000038e20000fae20000c8e6000068e80000
+      m_ExpandedIDs: 5cf8ffff7ef8ffff2cfbffff
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -675,9 +675,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 1478.5966, y: 988.92755, z: -13.553872}
+    m_Target: {x: -143.14307, y: 113.24224, z: -9.582785}
     speed: 2
-    m_Value: {x: 1440.847, y: 970.72687, z: -12.768548}
+    m_Value: {x: -143.14307, y: 113.24224, z: -9.582785}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -728,9 +728,9 @@ MonoBehaviour:
     speed: 2
     m_Value: {x: 0, y: 0, z: 0, w: 1}
   m_Size:
-    m_Target: 1823.6996
+    m_Target: 1358.2783
     speed: 2
-    m_Value: 1745.1671
+    m_Value: 1358.2783
   m_Ortho:
     m_Target: 1
     speed: 2
@@ -795,23 +795,23 @@ MonoBehaviour:
     m_SkipHidden: 1
     m_SearchArea: 1
     m_Folders:
-    - Assets/Scenes
+    - Assets/Scripts
     m_Globs: []
     m_OriginalText: 
     m_FilterByTypeIntersection: 0
   m_ViewMode: 1
   m_StartGridSize: 61
   m_LastFolders:
-  - Assets/Scenes
+  - Assets/Scripts
   m_LastFoldersGridSize: 61
   m_LastProjectPath: C:\Users\Juanjo\OneDrive\Documentos\ProyectUnity\MilWipVuf
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: 04680000
-    m_LastClickedID: 26628
-    m_ExpandedIDs: 00000000a8670000aa670000ac670000
+    m_SelectedIDs: 56640000
+    m_LastClickedID: 25686
+    m_ExpandedIDs: 00000000e6630000e8630000ea630000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -839,7 +839,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 00000000a8670000aa670000ac670000
+    m_ExpandedIDs: 00000000e6630000e8630000ea63000052640000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
