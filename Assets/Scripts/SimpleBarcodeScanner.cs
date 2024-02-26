@@ -3,6 +3,9 @@ using System.Linq;
 using UnityEngine;
 using UnityEngine.UI; // Importante para trabajar con UI Image
 using Vuforia;
+using UnityEngine.SceneManagement;
+using UnityEditor.SearchService;
+using JetBrains.Annotations;
 
 
 public class SimpleBarcodeScanner : MonoBehaviour
@@ -11,9 +14,13 @@ public class SimpleBarcodeScanner : MonoBehaviour
     public UnityEngine.UI.Image displayedImage; // Referencia al componente Image en tu Canvas
     public Sprite defaultImage; // Una imagen predeterminada para mostrar cuando no hay c�digo QR detectado
     BarcodeBehaviour mBarcodeBehaviour;
-    List<Sprite> images = new List<Sprite>();
+    public List<Sprite> images = new List<Sprite>();
 
+    Manager manager; 
 
+    
+
+    
     void Start()
     {
         mBarcodeBehaviour = GetComponent<BarcodeBehaviour>();
@@ -33,19 +40,21 @@ public class SimpleBarcodeScanner : MonoBehaviour
 
             foreach(var item in imageList)
             {
+            
                 Sprite newSprite = Resources.Load<Sprite>("Images/" + item);
                 images.Add(newSprite);
-            }
             
-
-            if (images.Count > 0)
-            {
-                Debug.Log("newSprite");
-                displayedImage.sprite = images[2]; // Actualizar la imagen mostrada
-                displayedImage.enabled = true;
-                barcodeAsText.text = imageList[2];
             }
-            else Debug.Log("No newSprite");
+
+            if (images[0] != null)
+            {
+               
+                Manager.Instance.UpdateSpriteList(images);
+                SceneManager.LoadScene("ImageView", LoadSceneMode.Single);
+            }
+            else Debug.Log("QR Invalid");
+            barcodeAsText.text = "Code QR Invalid";
+            
         }
         else
         {
@@ -54,4 +63,7 @@ public class SimpleBarcodeScanner : MonoBehaviour
             barcodeAsText.text = "";
         }
     }
+
+    
+     
 }
