@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.12731715, g: 0.13414735, b: 0.121078536, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657826, g: 0.49641263, b: 0.57481676, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -302,7 +302,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0.00036621, y: 0.024994}
+  m_AnchoredPosition: {x: -6, y: -14}
   m_SizeDelta: {x: 3393.8499, y: 1909.0507}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &770999978
@@ -355,6 +355,7 @@ GameObject:
   - component: {fileID: 1077712233}
   - component: {fileID: 1077712232}
   - component: {fileID: 1077712231}
+  - component: {fileID: 1077712235}
   - component: {fileID: 1077712234}
   m_Layer: 5
   m_Name: ButtonPrev
@@ -506,6 +507,19 @@ MonoBehaviour:
   imageText: {fileID: 0}
   imageList: []
   item: 3
+--- !u!114 &1077712235
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1077712229}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c28216041d1877d4abf82c3f49a9c2e1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  throttleDuration: 0.5
 --- !u!1 &1099404710
 GameObject:
   m_ObjectHideFlags: 0
@@ -519,6 +533,7 @@ GameObject:
   - component: {fileID: 1099404713}
   - component: {fileID: 1099404712}
   - component: {fileID: 1099404715}
+  - component: {fileID: 1099404716}
   m_Layer: 5
   m_Name: ButtonNext
   m_TagString: Untagged
@@ -672,6 +687,19 @@ MonoBehaviour:
   - {fileID: 0}
   - {fileID: 0}
   item: 0
+--- !u!114 &1099404716
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1099404710}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c28216041d1877d4abf82c3f49a9c2e1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  throttleDuration: 0.5
 --- !u!1 &1175568524
 GameObject:
   m_ObjectHideFlags: 0
@@ -711,7 +739,7 @@ Camera:
   m_BackGroundColor: {r: 0.19215687, g: 0.3019608, b: 0.4745098, a: 0}
   m_projectionMatrixMode: 1
   m_GateFitMode: 2
-  m_FOVAxisMode: 0
+  m_FOVAxisMode: 1
   m_SensorSize: {x: 36, y: 24}
   m_LensShift: {x: 0, y: 0}
   m_FocalLength: 50
@@ -793,8 +821,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -110.10614, y: -119.62027}
-  m_SizeDelta: {x: 220.90466, y: 238.66132}
+  m_AnchoredPosition: {x: -111.3, y: -122}
+  m_SizeDelta: {x: 157.6798, y: 255.3549}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1524587119
 MonoBehaviour:

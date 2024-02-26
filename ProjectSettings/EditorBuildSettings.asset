@@ -11,6 +11,12 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/SampleScene.unity
     guid: 9fc0d4010bbf28b4594072e72b8655ab
+  - enabled: 0
+    path: Assets/Scenes/GifScanner.unity
+    guid: 5762d4ca93dec9a499e8d24387549152
+  - enabled: 1
+    path: Assets/Scenes/GifView.unity
+    guid: 2d3f391fe23b2694796ae39856f76e22
   - enabled: 1
     path: Assets/Scenes/ImageView.unity
     guid: 6d13a117e676018448d715913b649a30

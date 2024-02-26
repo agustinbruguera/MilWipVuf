@@ -17,9 +17,8 @@ public class SimpleBarcodeScanner : MonoBehaviour
     public List<Sprite> images = new List<Sprite>();
 
     Manager manager; 
-
-    
-
+    Manager managerGif;
+   
     
     void Start()
     {
@@ -40,20 +39,26 @@ public class SimpleBarcodeScanner : MonoBehaviour
 
             foreach(var item in imageList)
             {
-            
                 Sprite newSprite = Resources.Load<Sprite>("Images/" + item);
                 images.Add(newSprite);
-            
             }
 
-            if (images[0] != null)
-            {
-               
+            if (imageList[0].Contains("pdf"))
+            { 
                 Manager.Instance.UpdateSpriteList(images);
                 SceneManager.LoadScene("ImageView", LoadSceneMode.Single);
             }
+            else if(imageList[0].Contains("frame"))
+            {
+                Manager.Instance.UpdateSpriteList(images);
+                SceneManager.LoadScene("GifView", LoadSceneMode.Single);
+            }
             else Debug.Log("QR Invalid");
             barcodeAsText.text = "Code QR Invalid";
+            displayedImage.enabled = true;
+            displayedImage.sprite = Resources.Load<Sprite>("images/Error");
+            
+
             
         }
         else
