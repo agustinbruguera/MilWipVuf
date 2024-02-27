@@ -27,12 +27,12 @@ m_LocalPackages:
       ticks: 0
     m_Hash: 0
   - m_FilePath: C:\Users\Juanjo\OneDrive\Documentos\ProyectUnity\MilWipVuf\Packages\com.ptc.vuforia.engine-10.21.3.tgz
-    m_PathExists: 1
+    m_PathExists: 0
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 638440289671577784
-    m_Hash: 3528508137
+      ticks: 0
+    m_Hash: 0
 m_ProjectPath: C:/Users/Juanjo/OneDrive/Documentos/ProyectUnity/MilWipVuf/Packages
 m_EditorVersion: 2021.3.35f1 (157b46ce122a)
 m_ResolvedPackages:

@@ -62,16 +62,16 @@
     <Analyzer Include="C:\Users\Juanjo\.vscode\extensions\visualstudiotoolsforunity.vstuc-0.9.4\Analyzers\Microsoft.Unity.Analyzers.dll" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\Scripts\Microphone.cs" />
     <Compile Include="Assets\Scripts\ButtonThrottle.cs" />
     <Compile Include="Assets\Scripts\SimpleBarcodeScanner.cs" />
+    <Compile Include="Assets\Scripts\PyTest.cs" />
+    <Compile Include="Assets\Scripts\Using pithon\test.cs" />
     <Compile Include="Assets\Scripts\Manager.cs" />
     <Compile Include="Assets\Scripts\Start.cs" />
     <Compile Include="Assets\Scripts\ImageView.cs" />
     <Compile Include="Assets\Scripts\GifView.cs" />
     <Compile Include="Assets\Scripts\ButtonBack.cs" />
-    <Compile Include="Assets\Scripts\Using pithon\test.cs" />
-    <Compile Include="Assets\Scripts\PyTest.cs" />
-    <Compile Include="Assets\Scripts\Microphone.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
@@ -1139,7 +1139,6 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="Unity.Scripting.Python.Samples.PySide.csproj" />
   </ItemGroup>
   <Import Project="Sdk.targets" Sdk="Microsoft.NET.Sdk" />
   <ItemGroup>
