@@ -5,16 +5,16 @@ m_ProjectFiles:
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 638444172863250591
-    m_Hash: 3981755378
+      ticks: 638446370834682202
+    m_Hash: 2990555840
   m_LockFileStatus:
     m_FilePath: C:/Users/Juanjo/OneDrive/Documentos/ProyectUnity/MilWipVuf/Packages/packages-lock.json
     m_PathExists: 1
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 638444173192974785
-    m_Hash: 619308703
+      ticks: 638446370834882360
+    m_Hash: 370102898
 m_EmbeddedPackageManifests:
   m_ManifestsStatus: {}
 m_LocalPackages:
@@ -338,16 +338,55 @@ m_ResolvedPackages:
     email: 
     url: 
   category: 
-  type: 
+  type: asset
   description: The Unity Analytics Library contains the Analytics Event Tracker component,
     the Data Privacy plug-in, and the Standard Events API.
   status: 0
   errors: []
   versions:
     all:
+    - 0.0.3
+    - 0.0.4
+    - 0.0.5
+    - 0.0.7
+    - 0.0.8
+    - 0.0.9
+    - 0.0.10
+    - 0.0.11
+    - 0.0.12
+    - 0.0.13
+    - 0.0.14
+    - 0.0.15
+    - 0.0.16
+    - 0.0.17
+    - 0.0.19
+    - 2.0.5
+    - 2.0.11
+    - 2.0.13
+    - 2.0.14
+    - 2.0.15
+    - 2.0.16
+    - 3.0.5
+    - 3.0.9
+    - 3.1.1
+    - 3.2.0
+    - 3.2.2
+    - 3.2.3
+    - 3.3.0
+    - 3.3.2-preview
+    - 3.3.2
+    - 3.3.4
+    - 3.3.5
+    - 3.4.0
+    - 3.5.3
+    - 3.6.11
     - 3.6.12
+    - 3.7.1
+    - 3.8.1
     compatible:
     - 3.6.12
+    - 3.7.1
+    - 3.8.1
     verified: 3.6.12
   dependencies:
   - name: com.unity.ugui
@@ -372,7 +411,7 @@ m_ResolvedPackages:
     configSource: 0
   hideInEditor: 1
   isAssetStorePackage: 0
-  datePublishedTicks: 0
+  datePublishedTicks: 637692274360000000
   documentationUrl: 
   hasRepository: 1
   repository:
@@ -1007,6 +1046,92 @@ m_ResolvedPackages:
     path: 
   unityLifecycle:
     version: 4.9.3
+    nextVersion: 
+    recommendedVersion: 
+- packageId: com.unity.scripting.python@7.0.1
+  testable: 0
+  isDirectDependency: 1
+  version: 7.0.1
+  source: 1
+  resolvedPath: C:\Users\Juanjo\OneDrive\Documentos\ProyectUnity\MilWipVuf\Library\PackageCache\com.unity.scripting.python@7.0.1
+  assetPath: Packages/com.unity.scripting.python
+  name: com.unity.scripting.python
+  displayName: Python Scripting
+  author:
+    name: 
+    email: 
+    url: 
+  category: Editor
+  type: assets
+  description: 'Optimize Unity Editor workflows for your VFX/animation pipelines
+    using Python scripting:
+
+    - Automate repetitive tasks to speed up your artistic
+    process.
+
+    - Integrate your custom pipeline tools within Unity.
+
+    - Increase
+    interoperability with other software of your pipeline.
+
+    This package includes
+    and uses Python 3.10.6 and Python for .NET 3.0.0.0 and is Editor-only (not available
+    in runtime builds).'
+  status: 0
+  errors: []
+  versions:
+    all:
+    - 2.0.0-preview.6
+    - 2.0.1-preview.2
+    - 2.1.0-preview.1
+    - 2.1.1-preview.1
+    - 4.0.0-exp.5
+    - 4.0.0-pre.1
+    - 5.0.0-pre.5
+    - 6.0.0
+    - 6.0.1
+    - 7.0.0-pre.1
+    - 7.0.0
+    - 7.0.1
+    compatible:
+    - 2.0.0-preview.6
+    - 2.0.1-preview.2
+    - 2.1.0-preview.1
+    - 2.1.1-preview.1
+    - 4.0.0-exp.5
+    - 4.0.0-pre.1
+    - 5.0.0-pre.5
+    - 6.0.0
+    - 6.0.1
+    - 7.0.0-pre.1
+    - 7.0.0
+    - 7.0.1
+    verified: 
+  dependencies: []
+  resolvedDependencies: []
+  keywords:
+  - python
+  - python.net
+  registry:
+    id: main
+    name: 
+    url: https://packages.unity.com
+    scopes: []
+    isDefault: 1
+    capabilities: 7
+    configSource: 0
+  hideInEditor: 1
+  isAssetStorePackage: 0
+  datePublishedTicks: 638285772530000000
+  documentationUrl: https://docs.unity3d.com/Packages/com.unity.scripting.python@7.0/manual/index.html
+  hasRepository: 1
+  repository:
+    type: git
+    url: https://github.cds.internal.unity3d.com/unity/com.unity.scripting.python.git
+    revision: 897a74d57244232f738140d9889261a544e29c3a
+    path: 
+  unityLifecycle:
+    version: 
     nextVersion: 
     recommendedVersion: 
 - packageId: com.unity.test-framework@1.1.33
@@ -3633,7 +3758,7 @@ m_ResolvedPackages:
     email: 
     url: 
   category: 
-  type: 
+  type: assets
   description: 'This package defines common components used by multiple Game Service
     packages.
 
@@ -3643,6 +3768,32 @@ m_ResolvedPackages:
   errors: []
   versions:
     all:
+    - 1.0.1
+    - 1.1.0-pre.7
+    - 1.1.0-pre.8
+    - 1.1.0-pre.9
+    - 1.1.0-pre.10
+    - 1.1.0-pre.11
+    - 1.1.0-pre.41
+    - 1.1.0-pre.69
+    - 1.2.0
+    - 1.3.1
+    - 1.3.2
+    - 1.4.0
+    - 1.4.1
+    - 1.4.2
+    - 1.4.3
+    - 1.5.2
+    - 1.6.0
+    - 1.7.0
+    - 1.7.1
+    - 1.8.1
+    - 1.8.2
+    - 1.9.0
+    - 1.10.1
+    - 1.11.0
+    - 1.12.0
+    - 1.12.1
     - 1.12.2
     compatible:
     - 1.12.2
@@ -3672,7 +3823,7 @@ m_ResolvedPackages:
     configSource: 0
   hideInEditor: 1
   isAssetStorePackage: 0
-  datePublishedTicks: 0
+  datePublishedTicks: 638406543980000000
   documentationUrl: https://docs.unity3d.com/Packages/com.unity.services.core@1.12/manual/index.html
   hasRepository: 1
   repository:
@@ -3939,6 +4090,21 @@ m_ResolvedPackages:
   errors: []
   versions:
     all:
+    - 1.0.0-preview.2
+    - 1.0.0-preview.3
+    - 1.0.0-preview.4
+    - 1.0.1-preview.1
+    - 1.1.2
+    - 2.0.0-preview
+    - 2.0.0-preview.1
+    - 2.0.0-preview.2
+    - 2.0.0
+    - 2.0.1-preview.1
+    - 2.0.2
+    - 3.0.1
+    - 3.0.2
+    - 3.1.0
+    - 3.2.0
     - 3.2.1
     compatible:
     - 3.2.1
@@ -3956,7 +4122,7 @@ m_ResolvedPackages:
     configSource: 0
   hideInEditor: 1
   isAssetStorePackage: 0
-  datePublishedTicks: 0
+  datePublishedTicks: 638186318800000000
   documentationUrl: 
   hasRepository: 1
   repository:

@@ -473,6 +473,10 @@
       <HintPath>Library\PackageCache\com.unity.analytics@3.6.12\Unity.Analytics.Tracker.dll</HintPath>
       <Private>False</Private>
     </Reference>
+    <Reference Include="Python.Runtime">
+      <HintPath>Library\PackageCache\com.unity.scripting.python@7.0.1\Editor\Lib\x64\Python.Runtime.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
     <Reference Include="nunit.framework">
       <HintPath>Library\PackageCache\com.unity.ext.nunit@1.0.6\net35\unity-custom\nunit.framework.dll</HintPath>
       <Private>False</Private>
@@ -1037,6 +1041,10 @@
       <HintPath>Library\ScriptAssemblies\Unity.VisualScripting.SettingsProvider.Editor.dll</HintPath>
       <Private>False</Private>
     </Reference>
+    <Reference Include="Unity.Scripting.Python.Editor">
+      <HintPath>Library\ScriptAssemblies\Unity.Scripting.Python.Editor.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
     <Reference Include="Unity.TestTools.CodeCoverage.Editor.OpenCover.Mono.Reflection">
       <HintPath>Library\ScriptAssemblies\Unity.TestTools.CodeCoverage.Editor.OpenCover.Mono.Reflection.dll</HintPath>
       <Private>False</Private>
@@ -1176,6 +1184,7 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="Assembly-CSharp.csproj" />
+    <ProjectReference Include="Unity.Scripting.Python.Samples.PySide.csproj" />
   </ItemGroup>
   <Import Project="Sdk.targets" Sdk="Microsoft.NET.Sdk" />
   <ItemGroup>
