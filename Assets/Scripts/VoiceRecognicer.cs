@@ -16,11 +16,10 @@ public  void Update()
     {
         Command = ContinuousVoiceRecorder.GetComponent<ContinuousVoiceRecorder>().ResultText;
 
-        if(Command.Contains("b"))
+        if(Command.Contains("c"))
         {
             SceneManager.LoadScene("SampleScene", LoadSceneMode.Single);
-            Debug.Log("Anda");
         }
-        else Debug.Log("Don't command recognized)");
+        else Debug.Log("");
     }
 }

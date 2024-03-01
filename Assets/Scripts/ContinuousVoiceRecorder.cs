@@ -6,6 +6,7 @@ using DeepSpeechClient;
 using DeepSpeechClient.Interfaces;
 using DeepSpeechClient.Models;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class ContinuousVoiceRecorder : MonoBehaviour
 {
@@ -23,6 +24,10 @@ public class ContinuousVoiceRecorder : MonoBehaviour
 
     [SerializeField, Tooltip("The minimum volume to detect voice input for"), Range(0.0f, 1.0f)]
     protected float _minimumSpeakingSampleValue = 0.5f;
+
+    [Header("Image")]
+    public Image microphoneIndicatorImage;
+    private Color originalColor;
 
     //Audio Detection
     private float _timeAtSilenceBegan;
@@ -86,15 +91,18 @@ public class ContinuousVoiceRecorder : MonoBehaviour
         _sampleSize = _frequency / 2;
         _device = Microphone.devices[0];
 
+        originalColor = microphoneIndicatorImage.color;
+
         StartRecording();
     }
     private void FixedUpdate()
     {
         if (!_recording)
+
         {
             return;
         }
-
+        
         bool transmit = transmitToggled || Input.GetKey(PushToTalkKey);
         int currentPosition = Microphone.GetPosition(_device);
 
@@ -108,6 +116,18 @@ public class ContinuousVoiceRecorder : MonoBehaviour
 
             _sampleIndex = 0;
         }
+
+        if (_audioDetected || transmitToggled || Input.GetKey(PushToTalkKey))
+        {
+            // Cambia el color de la imagen a verde cuando se detecta audio.
+            microphoneIndicatorImage.color = Color.green;
+        }
+        else
+        {
+            // Restaura el color original de la imagen cuando no se está detectando audio.
+            microphoneIndicatorImage.color = originalColor;
+        }
+
 
         // Read non-wrapped samples
         _previousPosition = currentPosition;
