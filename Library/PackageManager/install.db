@@ -1,0 +1,13 @@
+{
+  "schemaVersion": 1,
+  "packages": {
+    "com.ptc.vuforia.engine": {
+      "tarball": {
+        "hash": "94809bee5171",
+        "mtime": 1708432167158,
+        "size": 140831232,
+        "localPath": "C:\\Users\\Juanjo\\OneDrive\\Documentos\\ProyectUnity\\MilWipVuf\\Packages\\com.ptc.vuforia.engine-10.21.3.tgz"
+      }
+    }
+  }
+}

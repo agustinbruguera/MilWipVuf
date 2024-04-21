@@ -1,12 +1,7 @@
 using System.Collections.Generic;
-using System.Linq;
 using UnityEngine;
-using UnityEngine.UI; // Importante para trabajar con UI Image
-using Vuforia;
+using WearHFPlugin;
 using UnityEngine.SceneManagement;
-using TMPro;
-using Unity.VisualScripting;
-using System;
 
 public class ImageView : MonoBehaviour
 {
@@ -14,13 +9,41 @@ public class ImageView : MonoBehaviour
     public Sprite defaultImage;
     public TMPro.TextMeshProUGUI imageText;
     public List<Sprite> imageList = new List<Sprite>();
+    public List<string> commandBackList = new List<string>() {"back", "atras", "anterior", "volver", "previous"};
+    public List<string> commandNextList = new List<string>() {"next", "siguiente", "adelante", "continuar"};
 
     [SerializeField]
     private int item;
+    private WearHF wearHf;
 
     void Start()
     {
         item = 0;
+
+        GameObject wearHfManager = GameObject.Find("WearHFManager");
+        if (wearHfManager != null)
+        {
+            wearHf = wearHfManager.GetComponent<WearHF>();
+            if (wearHf != null)
+            {
+                foreach (var item in commandBackList)
+                {
+                    wearHf.AddVoiceCommand(item, PreviousImage);
+                }
+                foreach (var item in commandNextList)
+                {
+                    wearHf.AddVoiceCommand(item, NextImage);
+                }
+            }
+            else
+            {
+                Debug.LogError("WearHF component not found on WearHFManager.");
+            }
+        }
+        else
+        {
+            Debug.LogError("WearHFManager not found in the scene.");
+        }
 
         List<Sprite> imageList = Manager.Instance.imageList;
     
@@ -29,7 +52,7 @@ public class ImageView : MonoBehaviour
         
     }
  
-    public void NextImage()
+    public void NextImage(string AddVoiceCommand)
     {
         List<Sprite> imageList = Manager.Instance.imageList;
 
@@ -43,11 +66,11 @@ public class ImageView : MonoBehaviour
         }
         else
         {
-            Debug.LogError("La lista de imágenes está vacía.");
+            Debug.LogError("La lista de imï¿½genes estï¿½ vacï¿½a.");
         }
     }
 
-    public void PreviousImage()
+    public void PreviousImage(string AddVoiceCommand)
     {
         List<Sprite> imageList = Manager.Instance.imageList;
 
@@ -61,7 +84,7 @@ public class ImageView : MonoBehaviour
         }
         else
         {
-            Debug.LogError("La lista de imágenes está vacía.");
+            Debug.LogError("La lista de imï¿½genes estï¿½ vacï¿½a.");
         }
         
     }
