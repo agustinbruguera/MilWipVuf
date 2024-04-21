@@ -515,8 +515,10 @@ m_ResolvedPackages:
     - 2.1.0-preview.6
     - 2.1.0
     - 2.2.0
+    - 2.3.1
     compatible:
     - 2.2.0
+    - 2.3.1
     verified: 2.2.0
   dependencies: []
   resolvedDependencies: []

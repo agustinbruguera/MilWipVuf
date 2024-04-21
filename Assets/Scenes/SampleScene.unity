@@ -231,6 +231,21 @@ MonoBehaviour:
   SimpleBarcodeScanner: {fileID: 1278781364}
   imageList: []
   manager: {fileID: 688495998}
+  commandScanList:
+  - scan
+  - escanear
+  - escaneo
+  - escanea
+  - escaniar
+  - scann
+  - scanner
+  - escaner
+  commandMenuList:
+  - menu
+  - "men\xFA"
+  - meniu
+  - "m\xE9nu"
+  - "m\xE9niu"
 --- !u!4 &688496000
 Transform:
   m_ObjectHideFlags: 0
@@ -1021,6 +1036,50 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1483614564}
   m_CullTransparentMesh: 1
+--- !u!1 &1510193787
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1510193789}
+  - component: {fileID: 1510193788}
+  m_Layer: 0
+  m_Name: 'WearHFManager '
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1510193788
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1510193787}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1872979541, guid: 1ac242f5dfe7dad4985f8976eb0c4c57, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!4 &1510193789
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1510193787}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 1503.6146, y: 621.91205, z: 2.7051876}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 6
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1551725586
 GameObject:
   m_ObjectHideFlags: 0

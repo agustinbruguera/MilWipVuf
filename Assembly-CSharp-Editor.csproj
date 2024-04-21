@@ -59,7 +59,7 @@
     <UnityVersion>2021.3.35f1</UnityVersion>
   </PropertyGroup>
   <ItemGroup>
-    <Analyzer Include="C:\Users\Juanjo\.vscode\extensions\visualstudiotoolsforunity.vstuc-0.9.4\Analyzers\Microsoft.Unity.Analyzers.dll" />
+    <Analyzer Include="C:\Users\Juanjo\.vscode\extensions\visualstudiotoolsforunity.vstuc-1.0.1\Analyzers\Microsoft.Unity.Analyzers.dll" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\Editor\Migration\AddVuforiaEnginePackage.cs" />
@@ -475,6 +475,10 @@
     </Reference>
     <Reference Include="Python.Runtime">
       <HintPath>Library\PackageCache\com.unity.scripting.python@7.0.1\Editor\Lib\x64\Python.Runtime.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="WearHFPlugin">
+      <HintPath>Assets\Plugins\RealWare\WearHFPlugin.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="nunit.framework">
@@ -1184,7 +1188,6 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="Assembly-CSharp.csproj" />
-    <ProjectReference Include="com.mozila.deepspeech.csproj" />
   </ItemGroup>
   <Import Project="Sdk.targets" Sdk="Microsoft.NET.Sdk" />
   <ItemGroup>
